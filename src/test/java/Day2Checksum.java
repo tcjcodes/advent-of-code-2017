@@ -8,10 +8,10 @@ public class Day2Checksum {
 
     @Test
     public void test() {
-        int[][] matrix = TestUtil.readFileToIntMatrix("day2_input0.txt");
+        int[][] matrix = TestUtil.readIntMatrixFile("day2_input0.txt");
         assertEquals(18, checksum(matrix));
 
-        System.out.println(checksum(TestUtil.readFileToIntMatrix("day2_input1.txt")));
+        System.out.println(checksum(TestUtil.readIntMatrixFile("day2_input1.txt")));
     }
 
     static int checksum(int[][] matrix) {
